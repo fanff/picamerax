@@ -233,6 +233,12 @@ class PiCamera(object):
             6: mo.PiSensorMode('720p', (40, 90), full_fov=False),
             7: mo.PiSensorMode('VGA', (40, 90), full_fov=False),
             },
+	'imx477': {
+            1: mo.PiSensorMode('2028x1088', (1, 30), full_fov=False),
+            2: mo.PiSensorMode('2028x1520', (1, 15), still=True),
+            3: mo.PiSensorMode('4056x3040', (1/10, 1), still=True),
+            4: mo.PiSensorMode('1012x760', (1, 40)),
+            },
         }
 
     METER_MODES = {
